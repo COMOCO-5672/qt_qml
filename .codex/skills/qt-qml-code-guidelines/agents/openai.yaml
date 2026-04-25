@@ -1,0 +1,4 @@
+interface:
+  display_name: "Qt QML Code Guidelines"
+  short_description: "QML architecture, style, deployment, and security guardrails"
+  default_prompt: "Use $qt-qml-code-guidelines to implement or review QML code with maintainable architecture and deployment-safe practices."
