@@ -15,6 +15,7 @@ ApplicationWindow {
         { title: "属性绑定", source: "pages/BindingPage.qml" },
         { title: "样式", source: "pages/StylePage.qml" },
         { title: "JS", source: "pages/JsPage.qml" },
+        { title: "事件处理", source: "pages/EventsPage.qml" },
         { title: "C++ ViewModel", source: "pages/CppPage.qml" }
     ]
 

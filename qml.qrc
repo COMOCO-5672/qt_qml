@@ -5,6 +5,7 @@
         <file>qml/pages/BindingPage.qml</file>
         <file>qml/pages/StylePage.qml</file>
         <file>qml/pages/JsPage.qml</file>
+        <file>qml/pages/EventsPage.qml</file>
         <file>qml/pages/CppPage.qml</file>
         <file>qml/components/FormRow.qml</file>
         <file>qml/components/Section.qml</file>

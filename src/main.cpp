@@ -3,7 +3,9 @@
 #include <QQmlContext>
 #include <QQuickStyle>
 
+#include "AppEventFilter.h"
 #include "AppViewModel.h"
+#include "EventViewModel.h"
 #include "TodoListModel.h"
 
 int main(int argc, char *argv[])
@@ -16,7 +18,10 @@ int main(int argc, char *argv[])
     QQuickStyle::setStyle(QStringLiteral("Material"));
 
     AppViewModel appViewModel;
+    EventViewModel eventViewModel;
     TodoListModel todoListModel;
+    AppEventFilter appEventFilter(&eventViewModel);
+    app.installEventFilter(&appEventFilter);
 
     QQmlApplicationEngine engine;
 
@@ -24,6 +29,7 @@ int main(int argc, char *argv[])
     // QWidget 常把状态直接放在控件里; QML 推荐把状态放进 QObject/ViewModel,
     // 再通过属性绑定让界面自动刷新。
     engine.rootContext()->setContextProperty(QStringLiteral("appVM"), &appViewModel);
+    engine.rootContext()->setContextProperty(QStringLiteral("eventVM"), &eventViewModel);
     engine.rootContext()->setContextProperty(QStringLiteral("todoModel"), &todoListModel);
 
     const QUrl url(QStringLiteral("qrc:/qml/main.qml"));

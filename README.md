@@ -31,6 +31,7 @@ cmake --build build --config Debug
 - [qml/main.qml](qml/main.qml): 主窗口和左侧导航。
 - [qml/pages](qml/pages): 每个 QML 学习主题一个页面。
 - [docs/QML_CODE_STANDARD.md](docs/QML_CODE_STANDARD.md): QML 项目代码规范、架构边界、发布注意事项。
+- [docs/QML_DEPLOYMENT_PROTECTION.md](docs/QML_DEPLOYMENT_PROTECTION.md): QML/JS 发布、qrc 打包和源码保护边界。
 
 ## 和 QtWidget 的关键区别
 

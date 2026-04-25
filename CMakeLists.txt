@@ -14,6 +14,10 @@ add_executable(QmlQuickStart
     src/main.cpp
     src/AppViewModel.cpp
     src/AppViewModel.h
+    src/AppEventFilter.cpp
+    src/AppEventFilter.h
+    src/EventViewModel.cpp
+    src/EventViewModel.h
     src/TodoListModel.cpp
     src/TodoListModel.h
     qml.qrc
